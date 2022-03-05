@@ -1,0 +1,8 @@
+.dv1, .dv2, .dv3{
+    width: 200px;
+    height: 200px;
+    outline: 1px solid black;
+    margin: 10px;
+    display: inline-block;
+};
+

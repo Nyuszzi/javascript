@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="ola()">
+    <div class="dv1" onmouseover="mudaCor(this, randomColor())" onmouseout="mudaCor(this, 'white')"></div>
+    <div class="dv2" onmouseover="mudaCor(this, randomColor())" onmouseout="mudaCor(this, 'white')"></div>
+    <div class="dv3" onmouseover="mudaCor(this, randomColor())" onmouseout="mudaCor(this, 'white')"></div>
+    <div class="dv4"><button onclick="alert('Botão foi clicado!')" onmouseover="mudaPos(this)" >Clique em mim!</button></div>
+</body>
+</html>

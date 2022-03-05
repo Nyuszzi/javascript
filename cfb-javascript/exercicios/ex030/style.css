@@ -1,0 +1,65 @@
+
+body{
+    margin: 0px;
+    background-color: gray;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#titulo span{
+    color: white;
+}
+
+#dvPainel{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemPainel{
+    margin: 5px;
+}
+
+#dvJogo{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#dvBola{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 240px;
+    left: 490px;
+}
+
+.barra{
+    position: absolute;
+    width: 20px;
+    height: 150px;
+    background-color: white;
+    top: 175px;
+}
+
+.esquerda{
+    left: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.direita{
+    left: 960px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}

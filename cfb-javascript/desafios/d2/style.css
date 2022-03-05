@@ -1,0 +1,15 @@
+
+.jogador{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.btns{
+    position: absolute;
+    top: 130px;
+}

@@ -1,0 +1,7 @@
+label{
+    display: block;
+}
+
+input,label{
+    margin: 3px;
+}

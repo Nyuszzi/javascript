@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Strings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <p class="txt"> Curso de Javascript exercício 25: <strong>Match</strong> Patrocinado por: Curso de javascript de JavascripT</p>
+   
+    <script>
+        var texto = document.querySelector(".txt").innerHTML;
+        
+        var res = texto.indexOf("j");
+        document.write(res, "<br>");
+
+        var texto2 = texto;
+        var res2 = texto.localeCompare("texto2");
+        //0 - Strings iguais| 1 - Strings diferentes
+        if(res2 == 0){
+            document.write("Strings iguais");
+        } else {
+            document.write("Strings diferentes");
+        };
+
+        var res3 = texto.slice(8,25);
+        document.write("<br>", res3);
+
+        var res4 = texto.split(" ");
+        document.write("<br>", res4[5]);
+
+        var res5 = texto.substr(10, 10)
+        document.write("<br>", res5);
+
+        var res6 = texto.toLowerCase(); //toUpperCase
+        document.write("<br>", res6);
+
+
+    </script>
+</body>
+</html>

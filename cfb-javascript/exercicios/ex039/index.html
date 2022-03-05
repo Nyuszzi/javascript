@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p class="painel"></p>
+
+    <button onclick="config()">Configurações</button>
+
+
+    <form name="dados" class="dados">
+        <br><label>Nome:</label><br>
+        <input type="text" name="fnome" id="fnome" size="20"><br><br>
+        <label>Cor fundo:</label><br>
+        <input type="radio" name="fcorF" onclick="defineCor(1, 'red')">Vermelho<br>
+        <input type="radio" name="fcorF" onclick="defineCor(1, 'green')">Verde<br>
+        <input type="radio" name="fcorF" onclick="defineCor(1, 'blue')">Azul<br>
+        <input type="radio" name="fcorF" onclick="defineCor(1, 'black')">Preto<br>
+        <input type="radio" name="fcorF" onclick="defineCor(1, 'white')">Branco<br><br>
+
+        <label>Cor texto:</label><br>
+        <input type="radio" name="fcorT" onclick="defineCor(0, 'black')">Preto<br>
+        <input type="radio" name="fcorT" onclick="defineCor(0, 'white')">Branco<br><br>
+        <!--<input type="button" value="Mudar cor" onclick="mudaCor()">-->
+        <input type="button" value="Gravar" onclick="gravar()">
+    </form>
+</body>
+</html>

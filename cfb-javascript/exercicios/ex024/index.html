@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando atributos HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        function trocaCarro(car){
+           let obj =  document.querySelector("#carro");
+           if(car==1){
+               obj.setAttribute("class", "c1");
+           } else if(car==2){
+               obj.setAttribute("class", "c2");
+           } else if(car==3){
+               obj.setAttribute("class" , "c3");
+           };
+        };
+
+        function removerCarro(){
+            let obj = document.querySelector("#carro");
+            obj.removeAttribute("class");
+        };
+
+        function verifica(){
+            let obj = document.querySelector("#carro");
+            if(obj.hasAttribute("class")){
+                alert("Atributo class foi encontrado!");
+            } else {
+                alert("Sem atributo class");
+            };
+        };
+
+    </script>
+</head>
+<body>
+    <button onclick="trocaCarro(1)">Carro 1</button>
+    <button onclick="trocaCarro(2)">Carro 2</button>
+    <button onclick="trocaCarro(3)">Carro 3</button>
+    <button onclick="removerCarro()">Remover Carro</button>
+    <button onclick="verifica()">Verificar</button>
+    <div id="carro"></div>
+    
+</body>
+</html>

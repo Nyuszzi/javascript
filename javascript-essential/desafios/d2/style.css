@@ -1,0 +1,17 @@
+
+.navigation ul{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 32px;
+}
+
+.navigation a{
+    padding: 5px;
+    margin: 40px;
+    text-decoration: none;
+    color: blue;
+}

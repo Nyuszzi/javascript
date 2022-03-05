@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Strings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <p class="txt"> Curso de Javascript exercício 25: <strong>Match</strong> Patrocinado por: Curso de javascript de JavascripT</p>
+   
+    <script>
+        var texto = document.querySelector(".txt").innerHTML;
+        
+        var res = texto.match(/javascript/ig);
+        
+        document.write(res);
+        document.write(": ", res.length);
+        document.write("<br>" ,res[0]);
+
+        var res2 = texto.match(/a/ig);
+        document.write("<br>", res2);
+        document.write(": ", res2.length);
+    
+        var res3 = texto.match(/[ea]/ig);
+        document.write("<br>", res3);
+        document.write(": ", res3.length);
+
+        var res4 = texto.match(/[^uoiea]/ig);
+        document.write("<br>", res4);
+        document.write(": ", res4.length);
+
+        var res5 = texto.match(/[a-g]/ig);
+        document.write("<br>", res5);
+        document.write(": ", res5.length);
+        /*Modificadores de busca
+            i - Busca sem case-sensitive
+            g - Encontrar todas as ocorrências da busca
+            m - Pesquisa normal sem armazenar em array
+            usar em conjunto = /palavra/ig
+
+            /[abcd]/ - Pesquisa por todos os caracteres "a", "b", "c" e "d"
+            /[^ab]/ - Pesquisa por todos os caracteres menos "a" e "b"
+            /[a-f]/ - Pesquisa por todos os caracteres de "a" até "f"
+            /[^a-f]/ - Pesquisa por todos os caracteres menos "a" até "f"
+            /[a|f]/ - Pesquisa por todos os caracteres "a" e "f" semelhante à primeira opção
+        */
+    </script>
+</body>
+</html>
